@@ -11,7 +11,6 @@ Pick this up locally with Claude Code: open this repo, paste the "Prompt to star
 - Images are served by the Cloudflare Worker `caitie-bio`, at https://caitie-bio.caitie.workers.dev/, from `bio-assets/public/`: the avatar, the Noirleans town image, the cryptid and Cam Pal sprites, and the title images. The Worker's address is blank by design; the images are at paths like `/avatar.png`.
 - The section titles are images, made with `make-titles.py`, because web fonts can't load without `<style>`.
 - Production builds from `main` work. Builds of other branches fail (red "Workers Builds: caitie-bio" check on PRs). The cause is unknown; the error is only in the Cloudflare dashboard log. Either read that log, or untick "Builds for non-production branches".
-- **Afterlives must stay separate from adult sites.** Never hotlink afterlives.app images from the bio. The two afterlives.app buttons use `rel="noopener noreferrer"`.
 
 **Copy rules for the bio:** edgy in a sweet way, showing off that Caitie made all of it. Not condescending, not "cute". No em dashes. Never use "baby" or "babies", or anything that sounds young. Say "virtual pet", never "Tamagotchi". The footer is just "18+ only."
 

@@ -29,7 +29,7 @@ function artSrc(file, key, forPortal) {
 const ROOMS_DIR = path.join(ROOT, 'art', 'rooms');
 const roomNames = fs.existsSync(ROOMS_DIR) ? fs.readdirSync(ROOMS_DIR).filter(f => f.endsWith('.webp')).sort() : [];
 const roomsJs = forPortal =>
-  '// The painted rooms for the console screen, made by tools/build.js from art/rooms (do not edit by hand).\nvar AFTERLIVES_ROOMS = {\n' +
+  '// The painted rooms for the console screen, made by tools/build.js from art/rooms (do not edit by hand).\nvar CAM_ROOMS = {\n' +
   roomNames.map(f => '  ' + f.replace(/\.webp$/, '') + ": '" + artSrc(path.join(ROOMS_DIR, f), 'room-' + f.replace(/\.webp$/, ''), forPortal) + "',").join('\n') +
   '\n};\n';
 const CHARS_DIR = path.join(ROOT, 'art', 'characters');
@@ -45,7 +45,7 @@ function charsJs(forPortal) {
     const cellFile = path.join(CHARS_DIR, name, 'cell.json');
     out[name] = { name: chr.name, cell: fs.existsSync(cellFile) ? JSON.parse(fs.readFileSync(cellFile, 'utf8')).cell : 124, anims };
   }
-  return '// The characters and their animations, made by tools/build.js from art/characters (do not edit by hand).\nvar AFTERLIVES_CHARS = ' + JSON.stringify(out) + ';\n';
+  return '// The characters and their animations, made by tools/build.js from art/characters (do not edit by hand).\nvar CAM_CHARS = ' + JSON.stringify(out) + ';\n';
 }
 // the overlay's JS slot is the rooms, the characters, the console (its shapes and colors), their life in the room, then the overlay itself
 // (less their "module.exports" lines, which are only for the tests in Node and which the portal marks as errors)
@@ -143,7 +143,7 @@ var tipRow = document.getElementById('tips');
   tipRow.appendChild(b);
 });
 var chars = document.getElementById('chars');
-Object.keys(typeof AFTERLIVES_CHARS === 'object' ? AFTERLIVES_CHARS : {}).concat(['lumi', 'boo', 'bigfoot']).forEach(function (c) {
+Object.keys(typeof CAM_CHARS === 'object' ? CAM_CHARS : {}).concat(['lumi', 'boo', 'bigfoot']).forEach(function (c) {
   var b = document.createElement('button');
   b.textContent = 'show ' + c;
   b.onclick = function () { q.set('character', c); location.search = q.toString(); };
@@ -160,8 +160,8 @@ function pick(rowId, key, list) {
   });
 }
 pick('shapes', 'console_shape', ['coffin', 'moon', 'heart', 'star', 'box', 'diamond', 'harlequin', 'circle', 'none']);
-pick('colors', 'console_color', AfterlivesConsole.COLORS.map(function (c) { return c.id; }));
-pick('rooms', 'room', ['dusk'].concat(Object.keys(typeof AFTERLIVES_ROOMS === 'object' ? AFTERLIVES_ROOMS : {})));
+pick('colors', 'console_color', CamConsole.COLORS.map(function (c) { return c.id; }));
+pick('rooms', 'room', ['dusk'].concat(Object.keys(typeof CAM_ROOMS === 'object' ? CAM_ROOMS : {})));
 </script>
 </body></html>
 `;

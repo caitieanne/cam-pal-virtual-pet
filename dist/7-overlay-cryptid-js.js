@@ -1,5 +1,5 @@
 // The painted rooms for the console screen, made by tools/build.js from art/rooms (do not edit by hand).
-var AFTERLIVES_ROOMS = {
+var CAM_ROOMS = {
   academia: '{image:69db0d8741f454de3d03814ff0e825e8152e7004.webp}',
   boutique: '{image:0d67f54a6935ab2f51d2d2c776cd9fe8ca75c3ef.webp}',
   campfire: '{image:243639cf2a4c848583efcfa597bd2a0da010c79d.webp}',
@@ -19,15 +19,15 @@ var AFTERLIVES_ROOMS = {
   zen: '{image:341848afb394dd877b7f3b03dd73bc6c5c2acf61.webp}',
 };
 // The characters and their animations, made by tools/build.js from art/characters (do not edit by hand).
-var AFTERLIVES_CHARS = {"peachy":{"name":"Peachy","cell":129,"anims":{"idle":{"src":"{image:534079e6f16f222e9cea810f274bf2e83df53a2a.webp}","n":9,"fps":6},"walk":{"src":"{image:42d969df2d137511fb1f3d7f0ae9a8e09a1e9518.webp}","n":8,"fps":10},"desk":{"src":"{image:293e8379841063712eea21248701a59bcf2604a3.webp}","n":9,"fps":6},"lounge":{"src":"{image:52f2bdaa674f02dae1bed8aeacbafb8a58000779.webp}","n":9,"fps":6},"dance":{"src":"{image:5e812e3751763aa2e0ca687f3b5564b36f9b239d.webp}","n":13,"fps":8},"wink":{"src":"{image:ee914a6339ecfa5bf5ae1a69a139afd78c6baffe.webp}","n":9,"fps":8},"kiss":{"src":"{image:ab11eb258f43ef5d623d913dd1938b7e799874e5.webp}","n":9,"fps":8},"wave":{"src":"{image:4f3682d0152cd65b763782bf0ceabde16460fe51.webp}","n":9,"fps":8},"party":{"src":"{image:3e11d32196c783b2b4f3818e9375cd2a2a6fe1e3.webp}","n":9,"fps":10},"buzz":{"src":"{image:09cf870fe40dbf8eb85d5a509f6cd8adc53de7f5.webp}","n":9,"fps":12},"smooch":{"src":"{image:dbe29bbb68b613c66418b39acc2c9be6b00df3c6.webp}","n":9,"fps":8},"twerk":{"src":"{image:5b06a55efee01ece0fdb6f144cae9eaba87a6177.webp}","n":9,"fps":10},"blush":{"src":"{image:291bc3e472c32c02e198a3a48750b847c130b561.webp}","n":9,"fps":8}}},"eggy":{"name":"Eggy","cell":134,"anims":{"idle":{"src":"{image:d5f9cca713712d66ebc60386ad695d8c5a3cf3fb.webp}","n":9,"fps":6},"walk":{"src":"{image:b368c065f714b5488f75ef07e06b38f7ec29447d.webp}","n":8,"fps":10},"desk":{"src":"{image:482e8408424a5818a65e38d132918682d453363f.webp}","n":9,"fps":6},"lounge":{"src":"{image:61dcef21e5620eed5f84085fa40fd7529f51d621.webp}","n":9,"fps":6},"dance":{"src":"{image:6ecab5fd30934bc7943e68669e5a44f2678f1cd0.webp}","n":13,"fps":8},"wink":{"src":"{image:602bc4d61ae78ee937cb99c2b517151758f6c52f.webp}","n":9,"fps":8},"kiss":{"src":"{image:099ce78add0314230b727fdb5f347c75a7736c22.webp}","n":9,"fps":8},"wave":{"src":"{image:94169d1b73837eabe21e8a20039c17714845d19a.webp}","n":9,"fps":8},"party":{"src":"{image:65feb2686bcbc1bda19368c66eaa066ec4b9d096.webp}","n":9,"fps":10},"buzz":{"src":"{image:0701c70f08e8a991a92cdf43797fbc1ad6be4149.webp}","n":9,"fps":12},"smooch":{"src":"{image:b3d1ccdfd8f930ca9cd504b4285679b1b10c927d.webp}","n":9,"fps":8},"twerk":{"src":"{image:5bd6bc69dafc589640d1a659dc8e3534a1501615.webp}","n":9,"fps":10},"blush":{"src":"{image:3e5a0bf03de9d47e59382a2b5d26affc3759aa66.webp}","n":9,"fps":8}}},"cherries":{"name":"The Cherries","cell":140,"anims":{"idle":{"src":"{image:ae8a149018cef3903330380f933a80ed20dae92e.webp}","n":9,"fps":6},"walk":{"src":"{image:2264b2ab27bb850546feaa844154d22dc7a430f0.webp}","n":8,"fps":10},"desk":{"src":"{image:431ed1c3c7cc18177a68b1ae4a4db0044d8c4505.webp}","n":9,"fps":6},"lounge":{"src":"{image:36b972de44675fac3294cb03fd3d09fa8b4b9442.webp}","n":9,"fps":6},"dance":{"src":"{image:5148b22ac64b609bde19c5ea6482560e0a30fa1f.webp}","n":13,"fps":8},"wink":{"src":"{image:6ff51845190c9f4e7e08f8af18c97de18fe6c4af.webp}","n":9,"fps":8},"kiss":{"src":"{image:55a666d71e8f3b4170aeda85c4151d33c6044631.webp}","n":9,"fps":8},"wave":{"src":"{image:ae58c399559d75116479fea23e4b917921c25ebe.webp}","n":9,"fps":8},"party":{"src":"{image:1c4c107989095529884272ba15332e5f05300692.webp}","n":9,"fps":10},"buzz":{"src":"{image:11d170065bc53d5a86ed9a7366d37a92238d3743.webp}","n":9,"fps":12},"smooch":{"src":"{image:ff36b6123bf259a27983b0a91a300733a8c2cd42.webp}","n":9,"fps":8},"twerk":{"src":"{image:75169f2c73781570f1be0920cc1cc27c5d32492f.webp}","n":9,"fps":10},"blush":{"src":"{image:7cdb59a062cb5e55d27c4c99c215ff1fa8212f20.webp}","n":9,"fps":8}}},"bananzo":{"name":"Bananzo","cell":130,"anims":{"idle":{"src":"{image:ae9817f0c48a39b28be641e1e86782d90511f956.webp}","n":9,"fps":6},"walk":{"src":"{image:2f6222569d26f3f4753b3266a863557318e0d235.webp}","n":8,"fps":10},"desk":{"src":"{image:f35008314f441bd518aebdc1397a0e17bbd1a35c.webp}","n":9,"fps":6},"lounge":{"src":"{image:078fc9d92168bce27322eecc5b8d3eeb1adf9050.webp}","n":9,"fps":6},"dance":{"src":"{image:c3fd722ba47ab9af71a36d9d4cb1445719e6d548.webp}","n":13,"fps":8},"wink":{"src":"{image:4fdd7f6033436ac3960b2bfb263c62346f6c162b.webp}","n":9,"fps":8},"kiss":{"src":"{image:c9493b3ab2c3bc2a2501dd42a3937d55bde9a5d3.webp}","n":9,"fps":8},"wave":{"src":"{image:b6fdce56b7d376bdc08632e244c8390a05ea832d.webp}","n":9,"fps":8},"party":{"src":"{image:82c022afc33fba61bb739758ecab3b98e37ff38e.webp}","n":9,"fps":10},"buzz":{"src":"{image:64a42367e40c24b443790e683f6e197e7f456b68.webp}","n":9,"fps":12},"smooch":{"src":"{image:47a3d89d612423d694bc3d6396f22fdb0d8c69bf.webp}","n":9,"fps":8},"twerk":{"src":"{image:e51ec43eb4b9c15cf1a9428fadeecd9becddf696.webp}","n":9,"fps":10},"blush":{"src":"{image:9e6df98fe2e8a34f6c62a135d6c6a22d1ca376c2.webp}","n":9,"fps":8}}}};
+var CAM_CHARS = {"peachy":{"name":"Peachy","cell":129,"anims":{"idle":{"src":"{image:534079e6f16f222e9cea810f274bf2e83df53a2a.webp}","n":9,"fps":6},"walk":{"src":"{image:42d969df2d137511fb1f3d7f0ae9a8e09a1e9518.webp}","n":8,"fps":10},"desk":{"src":"{image:293e8379841063712eea21248701a59bcf2604a3.webp}","n":9,"fps":6},"lounge":{"src":"{image:52f2bdaa674f02dae1bed8aeacbafb8a58000779.webp}","n":9,"fps":6},"dance":{"src":"{image:5e812e3751763aa2e0ca687f3b5564b36f9b239d.webp}","n":13,"fps":8},"wink":{"src":"{image:ee914a6339ecfa5bf5ae1a69a139afd78c6baffe.webp}","n":9,"fps":8},"kiss":{"src":"{image:ab11eb258f43ef5d623d913dd1938b7e799874e5.webp}","n":9,"fps":8},"wave":{"src":"{image:4f3682d0152cd65b763782bf0ceabde16460fe51.webp}","n":9,"fps":8},"party":{"src":"{image:3e11d32196c783b2b4f3818e9375cd2a2a6fe1e3.webp}","n":9,"fps":10},"buzz":{"src":"{image:09cf870fe40dbf8eb85d5a509f6cd8adc53de7f5.webp}","n":9,"fps":12},"smooch":{"src":"{image:dbe29bbb68b613c66418b39acc2c9be6b00df3c6.webp}","n":9,"fps":8},"twerk":{"src":"{image:5b06a55efee01ece0fdb6f144cae9eaba87a6177.webp}","n":9,"fps":10},"blush":{"src":"{image:291bc3e472c32c02e198a3a48750b847c130b561.webp}","n":9,"fps":8}}},"eggy":{"name":"Eggy","cell":134,"anims":{"idle":{"src":"{image:d5f9cca713712d66ebc60386ad695d8c5a3cf3fb.webp}","n":9,"fps":6},"walk":{"src":"{image:b368c065f714b5488f75ef07e06b38f7ec29447d.webp}","n":8,"fps":10},"desk":{"src":"{image:482e8408424a5818a65e38d132918682d453363f.webp}","n":9,"fps":6},"lounge":{"src":"{image:61dcef21e5620eed5f84085fa40fd7529f51d621.webp}","n":9,"fps":6},"dance":{"src":"{image:6ecab5fd30934bc7943e68669e5a44f2678f1cd0.webp}","n":13,"fps":8},"wink":{"src":"{image:602bc4d61ae78ee937cb99c2b517151758f6c52f.webp}","n":9,"fps":8},"kiss":{"src":"{image:099ce78add0314230b727fdb5f347c75a7736c22.webp}","n":9,"fps":8},"wave":{"src":"{image:94169d1b73837eabe21e8a20039c17714845d19a.webp}","n":9,"fps":8},"party":{"src":"{image:65feb2686bcbc1bda19368c66eaa066ec4b9d096.webp}","n":9,"fps":10},"buzz":{"src":"{image:0701c70f08e8a991a92cdf43797fbc1ad6be4149.webp}","n":9,"fps":12},"smooch":{"src":"{image:b3d1ccdfd8f930ca9cd504b4285679b1b10c927d.webp}","n":9,"fps":8},"twerk":{"src":"{image:5bd6bc69dafc589640d1a659dc8e3534a1501615.webp}","n":9,"fps":10},"blush":{"src":"{image:3e5a0bf03de9d47e59382a2b5d26affc3759aa66.webp}","n":9,"fps":8}}},"cherries":{"name":"The Cherries","cell":140,"anims":{"idle":{"src":"{image:ae8a149018cef3903330380f933a80ed20dae92e.webp}","n":9,"fps":6},"walk":{"src":"{image:2264b2ab27bb850546feaa844154d22dc7a430f0.webp}","n":8,"fps":10},"desk":{"src":"{image:431ed1c3c7cc18177a68b1ae4a4db0044d8c4505.webp}","n":9,"fps":6},"lounge":{"src":"{image:36b972de44675fac3294cb03fd3d09fa8b4b9442.webp}","n":9,"fps":6},"dance":{"src":"{image:5148b22ac64b609bde19c5ea6482560e0a30fa1f.webp}","n":13,"fps":8},"wink":{"src":"{image:6ff51845190c9f4e7e08f8af18c97de18fe6c4af.webp}","n":9,"fps":8},"kiss":{"src":"{image:55a666d71e8f3b4170aeda85c4151d33c6044631.webp}","n":9,"fps":8},"wave":{"src":"{image:ae58c399559d75116479fea23e4b917921c25ebe.webp}","n":9,"fps":8},"party":{"src":"{image:1c4c107989095529884272ba15332e5f05300692.webp}","n":9,"fps":10},"buzz":{"src":"{image:11d170065bc53d5a86ed9a7366d37a92238d3743.webp}","n":9,"fps":12},"smooch":{"src":"{image:ff36b6123bf259a27983b0a91a300733a8c2cd42.webp}","n":9,"fps":8},"twerk":{"src":"{image:75169f2c73781570f1be0920cc1cc27c5d32492f.webp}","n":9,"fps":10},"blush":{"src":"{image:7cdb59a062cb5e55d27c4c99c215ff1fa8212f20.webp}","n":9,"fps":8}}},"bananzo":{"name":"Bananzo","cell":130,"anims":{"idle":{"src":"{image:ae9817f0c48a39b28be641e1e86782d90511f956.webp}","n":9,"fps":6},"walk":{"src":"{image:2f6222569d26f3f4753b3266a863557318e0d235.webp}","n":8,"fps":10},"desk":{"src":"{image:f35008314f441bd518aebdc1397a0e17bbd1a35c.webp}","n":9,"fps":6},"lounge":{"src":"{image:078fc9d92168bce27322eecc5b8d3eeb1adf9050.webp}","n":9,"fps":6},"dance":{"src":"{image:c3fd722ba47ab9af71a36d9d4cb1445719e6d548.webp}","n":13,"fps":8},"wink":{"src":"{image:4fdd7f6033436ac3960b2bfb263c62346f6c162b.webp}","n":9,"fps":8},"kiss":{"src":"{image:c9493b3ab2c3bc2a2501dd42a3937d55bde9a5d3.webp}","n":9,"fps":8},"wave":{"src":"{image:b6fdce56b7d376bdc08632e244c8390a05ea832d.webp}","n":9,"fps":8},"party":{"src":"{image:82c022afc33fba61bb739758ecab3b98e37ff38e.webp}","n":9,"fps":10},"buzz":{"src":"{image:64a42367e40c24b443790e683f6e197e7f456b68.webp}","n":9,"fps":12},"smooch":{"src":"{image:47a3d89d612423d694bc3d6396f22fdb0d8c69bf.webp}","n":9,"fps":8},"twerk":{"src":"{image:e51ec43eb4b9c15cf1a9428fadeecd9becddf696.webp}","n":9,"fps":10},"blush":{"src":"{image:9e6df98fe2e8a34f6c62a135d6c6a22d1ca376c2.webp}","n":9,"fps":8}}}};
 // The cryptid's console: a bubbly see-through plastic handheld that the cryptid lives inside, in one of eight shapes (coffin, crescent moon,
-// heart, star, box, diamond, harlequin, circle) and ten colors (the same ones as the Afterlives game's console). Drawn by this script as SVG, no images.
+// heart, star, box, diamond, harlequin, circle) and ten colors. Drawn by this script as SVG, no images.
 // Each shape is the outline of the screen; the plastic is that same outline drawn with a thick, round-jointed stroke, so every shape gets
 // an even, bubbly band of plastic all round, however pointy it is.
 // The screen shows a room: the dusk sky (drawn here) or one of the painted rooms in art/rooms, which the build bakes into the overlay as
-// AFTERLIVES_ROOMS (the overlay may not load image files of its own).
+// CAM_ROOMS (the overlay may not load image files of its own).
 
-var AfterlivesConsole = (function () {
+var CamConsole = (function () {
   // ---- colors (names and plastic tones from the game's console colors) ----
   var COLORS = [
     { id: 'midnight', name: 'Midnight', hex: '#2b2b36', dark: true },
@@ -186,7 +186,7 @@ var AfterlivesConsole = (function () {
 
   /** The painted room for a name, as an image address, or null for the dusk sky (the default, and anything not known). */
   function roomOf(name) {
-    var rooms = typeof AFTERLIVES_ROOMS === 'object' && AFTERLIVES_ROOMS ? AFTERLIVES_ROOMS : {};
+    var rooms = typeof CAM_ROOMS === 'object' && CAM_ROOMS ? CAM_ROOMS : {};
     var key = roomKeyOf(name);
     return Object.prototype.hasOwnProperty.call(rooms, key) ? rooms[key] : null;
   }
@@ -473,9 +473,9 @@ var AfterlivesConsole = (function () {
 
 // The character's life in their room: they walk between the room's spots (the bed or couch, the desk chair, the rug, the window), do the
 // thing that spot is for (pose, type, dance, gaze), and get smaller the further back in the room they go. A tip or a goal interrupts:
-// they turn to the camera and react. The frames are PixelLab animations baked in by the build as AFTERLIVES_CHARS.
+// they turn to the camera and react. The frames are PixelLab animations baked in by the build as CAM_CHARS.
 
-var AfterlivesLife = (function () {
+var CamLife = (function () {
   // ---- the rooms' spots, as fractions of the room picture (240 x 320). x, y is where the feet go. ----
   // back and front are the floor's far and near lines, for the depth scaling. A spot that is null is a thing the room does not have.
   // desk.face is the way they face sitting at it.
@@ -712,7 +712,7 @@ var AfterlivesLife = (function () {
 
 // Broadcast Overlay "cryptid" JS.
 // A little cam character on a see-through page. It reacts to the events the app sends with $overlay.emit('react', { kind, user, amount }):
-// wink, kiss, dance, party, hello, goal. The sassy fruit (AFTERLIVES_CHARS, PixelLab animations baked in by the build) live in their room
+// wink, kiss, dance, party, hello, goal. The sassy fruit (CAM_CHARS, PixelLab animations baked in by the build) live in their room
 // (life.js); the older placeholder cryptids "lumi", "boo" and "bigfoot" are drawn by this script on a small canvas.
 
 (function () {
@@ -726,7 +726,7 @@ var AfterlivesLife = (function () {
 
   // ---- settings (read only here) ----
   var settings = typeof $settings === 'object' && $settings ? (typeof flattenSettings === 'function' ? flattenSettings($settings) : $settings) : {};
-  var CHARS = typeof AFTERLIVES_CHARS === 'object' && AFTERLIVES_CHARS ? AFTERLIVES_CHARS : {};
+  var CHARS = typeof CAM_CHARS === 'object' && CAM_CHARS ? CAM_CHARS : {};
   // "The Cherries" on the settings page is "cherries" here
   var picked = String(settings.character || '').toLowerCase().replace(/[^a-z]/g, '').replace(/^the/, '');
   var DRAWN = ['lumi', 'boo', 'bigfoot'];
@@ -736,22 +736,22 @@ var AfterlivesLife = (function () {
   var CHARACTER = SPRITE ? picked || Object.keys(CHARS)[0] : ['lumi', 'boo', 'bigfoot'].indexOf(picked) >= 0 ? picked : 'lumi';
   var NAME = String(settings.pet_name || (SPRITE ? SPRITE.name : { lumi: 'Lumi', boo: 'Boo', bigfoot: 'Bigfoot' }[CHARACTER])).slice(0, 16);
   // the console it lives in (see console.js); effects go inside its screen. With console_shape "none" it stands on the stream by itself.
-  var fx = (typeof AfterlivesConsole === 'object' && AfterlivesConsole.mount(stage, settings, canvas, tagEl)) || stage;
+  var fx = (typeof CamConsole === 'object' && CamConsole.mount(stage, settings, canvas, tagEl)) || stage;
   var hasConsole = fx !== stage;
   // no console: the character still keeps to its corner, never the middle of the stream where the performer is
-  if (!hasConsole && typeof AfterlivesConsole === 'object') {
-    fx = AfterlivesConsole.bareCorner(stage, settings, tagEl);
+  if (!hasConsole && typeof CamConsole === 'object') {
+    fx = CamConsole.bareCorner(stage, settings, tagEl);
     fx.appendChild(canvas);
     canvas.style.cssText = 'position:absolute;left:0;bottom:0;width:100%;height:auto;aspect-ratio:1;margin:0;image-rendering:pixelated;';
   }
   // a sprite character lives in the room: walks about, sits at the desk, poses, dances (life.js)
   var life = null;
-  if (SPRITE && typeof AfterlivesLife === 'object') {
+  if (SPRITE && typeof CamLife === 'object') {
     canvas.style.display = 'none';
-    var roomKey = AfterlivesConsole.roomKeyOf(settings.room);
-    var roomArt = hasConsole ? AfterlivesConsole.roomOf(settings.room) : null;
-    life = AfterlivesLife.mount(fx, SPRITE, roomArt ? roomKey : 'dusk', roomArt);
-    window.afterlivesPet = life; // lets the preview page send them to a spot
+    var roomKey = CamConsole.roomKeyOf(settings.room);
+    var roomArt = hasConsole ? CamConsole.roomOf(settings.room) : null;
+    life = CamLife.mount(fx, SPRITE, roomArt ? roomKey : 'dusk', roomArt);
+    window.camPet = life; // lets the preview page send them to a spot
   }
 
   // ---- drawing helpers (everything is whole pixels on a 64 x 64 canvas) ----

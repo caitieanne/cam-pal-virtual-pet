@@ -1,8 +1,8 @@
 // The character's life in their room: they walk between the room's spots (the bed or couch, the desk chair, the rug, the window), do the
 // thing that spot is for (pose, type, dance, gaze), and get smaller the further back in the room they go. A tip or a goal interrupts:
-// they turn to the camera and react. The frames are PixelLab animations baked in by the build as AFTERLIVES_CHARS.
+// they turn to the camera and react. The frames are PixelLab animations baked in by the build as CAM_CHARS.
 
-var AfterlivesLife = (function () {
+var CamLife = (function () {
   // ---- the rooms' spots, as fractions of the room picture (240 x 320). x, y is where the feet go. ----
   // back and front are the floor's far and near lines, for the depth scaling. A spot that is null is a thing the room does not have.
   // desk.face is the way they face sitting at it.
@@ -236,4 +236,4 @@ var AfterlivesLife = (function () {
   return { ROOMS: ROOMS, depthScale: depthScale, nextSpot: nextSpot, REACT: REACT, mount: mount };
 })();
 
-if (typeof module !== 'undefined' && module.exports) module.exports = AfterlivesLife;
+if (typeof module !== 'undefined' && module.exports) module.exports = CamLife;
