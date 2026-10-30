@@ -1,11 +1,11 @@
 // The cryptid's console: a bubbly see-through plastic handheld that the cryptid lives inside, in one of eight shapes (coffin, crescent moon,
-// heart, star, box, diamond, harlequin, circle) and ten colors (the same ones as the Afterlives game's console). Drawn by this script as SVG, no images.
+// heart, star, box, diamond, harlequin, circle) and ten colors. Drawn by this script as SVG, no images.
 // Each shape is the outline of the screen; the plastic is that same outline drawn with a thick, round-jointed stroke, so every shape gets
 // an even, bubbly band of plastic all round, however pointy it is.
 // The screen shows a room: the dusk sky (drawn here) or one of the painted rooms in art/rooms, which the build bakes into the overlay as
-// AFTERLIVES_ROOMS (the overlay may not load image files of its own).
+// CAM_ROOMS (the overlay may not load image files of its own).
 
-var AfterlivesConsole = (function () {
+var CamConsole = (function () {
   // ---- colors (names and plastic tones from the game's console colors) ----
   var COLORS = [
     { id: 'midnight', name: 'Midnight', hex: '#2b2b36', dark: true },
@@ -164,7 +164,7 @@ var AfterlivesConsole = (function () {
 
   /** The painted room for a name, as an image address, or null for the dusk sky (the default, and anything not known). */
   function roomOf(name) {
-    var rooms = typeof AFTERLIVES_ROOMS === 'object' && AFTERLIVES_ROOMS ? AFTERLIVES_ROOMS : {};
+    var rooms = typeof CAM_ROOMS === 'object' && CAM_ROOMS ? CAM_ROOMS : {};
     var key = roomKeyOf(name);
     return Object.prototype.hasOwnProperty.call(rooms, key) ? rooms[key] : null;
   }
@@ -448,4 +448,4 @@ var AfterlivesConsole = (function () {
   return { COLORS: COLORS, SHAPES: SHAPES, ROOM_LABELS: ROOM_LABELS, SHAPE_LABELS: SHAPE_LABELS, CORNERS: CORNERS, cornerOf: cornerOf, bareCorner: bareCorner, roomKeyOf: roomKeyOf, roomOf: roomOf, colorOf: colorOf, shapeOf: shapeOf, tonesFor: tonesFor, pathText: pathText, layout: layout, mount: mount };
 })();
 
-if (typeof module !== 'undefined' && module.exports) module.exports = AfterlivesConsole;
+if (typeof module !== 'undefined' && module.exports) module.exports = CamConsole;

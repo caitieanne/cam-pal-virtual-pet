@@ -1,4 +1,4 @@
-# Afterlives: Cam Cryptid (a Chaturbate app)
+# Cam Pal Virtual Pet (a Chaturbate app)
 
 A little cryptid for your Chaturbate stream. It lives in a **broadcast overlay** (a see-through page you add to OBS) and reacts to what happens in
 your room: tips set off a wink, a blush, a kiss, a vibe, a dance, a smooch, a twerk or a party; a fan club join gets a party; newcomers get a wave; chat can play with it for free.
@@ -10,7 +10,7 @@ Three characters to choose from, all drawn in pixel art by the overlay's own scr
 | **Boo** | A cam ghost with a headset, a hair bow and a tiny webcam on a stick with a blinking REC light. |
 | **Bigfoot** | A blurry influencer with a selfie stick and round sunglasses, who is always a little out of focus, like cryptid evidence, until something happens. |
 
-It is cute and teasing, nothing explicit, so it sits within Chaturbate's app content rules. Part of the Afterlives family of cozy cryptid games (afterlives.app).
+It is cute and teasing, nothing explicit, so it sits within Chaturbate's app content rules.
 
 ## How it follows Chaturbate's rules (devportal.cb.dev)
 

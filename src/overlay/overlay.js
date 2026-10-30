@@ -1,6 +1,6 @@
 // Broadcast Overlay "cryptid" JS.
 // A little cam character on a see-through page. It reacts to the events the app sends with $overlay.emit('react', { kind, user, amount }):
-// wink, kiss, dance, party, hello, goal. The sassy fruit (AFTERLIVES_CHARS, PixelLab animations baked in by the build) live in their room
+// wink, kiss, dance, party, hello, goal. The sassy fruit (CAM_CHARS, PixelLab animations baked in by the build) live in their room
 // (life.js); the older placeholder cryptids "lumi", "boo" and "bigfoot" are drawn by this script on a small canvas.
 
 (function () {
@@ -14,7 +14,7 @@
 
   // ---- settings (read only here) ----
   var settings = typeof $settings === 'object' && $settings ? (typeof flattenSettings === 'function' ? flattenSettings($settings) : $settings) : {};
-  var CHARS = typeof AFTERLIVES_CHARS === 'object' && AFTERLIVES_CHARS ? AFTERLIVES_CHARS : {};
+  var CHARS = typeof CAM_CHARS === 'object' && CAM_CHARS ? CAM_CHARS : {};
   // "The Cherries" on the settings page is "cherries" here
   var picked = String(settings.character || '').toLowerCase().replace(/[^a-z]/g, '').replace(/^the/, '');
   var DRAWN = ['lumi', 'boo', 'bigfoot'];
@@ -24,22 +24,22 @@
   var CHARACTER = SPRITE ? picked || Object.keys(CHARS)[0] : ['lumi', 'boo', 'bigfoot'].indexOf(picked) >= 0 ? picked : 'lumi';
   var NAME = String(settings.pet_name || (SPRITE ? SPRITE.name : { lumi: 'Lumi', boo: 'Boo', bigfoot: 'Bigfoot' }[CHARACTER])).slice(0, 16);
   // the console it lives in (see console.js); effects go inside its screen. With console_shape "none" it stands on the stream by itself.
-  var fx = (typeof AfterlivesConsole === 'object' && AfterlivesConsole.mount(stage, settings, canvas, tagEl)) || stage;
+  var fx = (typeof CamConsole === 'object' && CamConsole.mount(stage, settings, canvas, tagEl)) || stage;
   var hasConsole = fx !== stage;
   // no console: the character still keeps to its corner, never the middle of the stream where the performer is
-  if (!hasConsole && typeof AfterlivesConsole === 'object') {
-    fx = AfterlivesConsole.bareCorner(stage, settings, tagEl);
+  if (!hasConsole && typeof CamConsole === 'object') {
+    fx = CamConsole.bareCorner(stage, settings, tagEl);
     fx.appendChild(canvas);
     canvas.style.cssText = 'position:absolute;left:0;bottom:0;width:100%;height:auto;aspect-ratio:1;margin:0;image-rendering:pixelated;';
   }
   // a sprite character lives in the room: walks about, sits at the desk, poses, dances (life.js)
   var life = null;
-  if (SPRITE && typeof AfterlivesLife === 'object') {
+  if (SPRITE && typeof CamLife === 'object') {
     canvas.style.display = 'none';
-    var roomKey = AfterlivesConsole.roomKeyOf(settings.room);
-    var roomArt = hasConsole ? AfterlivesConsole.roomOf(settings.room) : null;
-    life = AfterlivesLife.mount(fx, SPRITE, roomArt ? roomKey : 'dusk', roomArt);
-    window.afterlivesPet = life; // lets the preview page send them to a spot
+    var roomKey = CamConsole.roomKeyOf(settings.room);
+    var roomArt = hasConsole ? CamConsole.roomOf(settings.room) : null;
+    life = CamLife.mount(fx, SPRITE, roomArt ? roomKey : 'dusk', roomArt);
+    window.camPet = life; // lets the preview page send them to a spot
   }
 
   // ---- drawing helpers (everything is whole pixels on a 64 x 64 canvas) ----
