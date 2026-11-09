@@ -31,8 +31,8 @@ afterlives = "".join([
   row([mon("cryptids/ghost.png","Ghost","Haunts on purpose."),mon("cryptids/sasquatch.png","Sasquatch","Blurry in every photo."),
        mon("cryptids/swampMonster.png","Swamp Monster","Damp. Unbothered."),mon("cryptids/mothman.png","Mothman","Will fight your ring light."),
        mon("cryptids/jerseyDevil.png","Jersey Devil","Chaos with wings.")]),
-  badge("V2 LANDS HALLOWEEN 2026", "https://afterlives.app/v2"),
-  txt("30+ cryptids and a stack of new minigames. I can't wait to show you.")])
+  badge("V2 IS OUT NOW", "https://play.afterlives.app/"),
+  txt("It's live! 13 cryptids to raise and minigames to play between visits. Free to start, no ads, and one unlock if you fall in love.")])
 campal = "".join([
   title('cam-pal.png','Cam Pal',115,39), badge("FREE IN THE CHATURBATE APP LIBRARY", CAMPAL_URL, ref=False),
   txt("My own Chaturbate app, written, drawn and shipped by me. A sassy pixel pet moves into a see-through console in the corner of your stream and goes wild every time you get tipped."),
@@ -46,7 +46,7 @@ inner = "".join([
   blk("margin:0 0 4px 0;color:#a1a1aa;font-size:14px;%s" % F, "Cam girl who codes. I made everything you see below."),
   txt("Between shows I design, draw and build my own games and apps. Come say hi, poke around, and stay a while."),
   blk(SEC, afterlives), blk(SEC, campal),
-  blk("margin-top:22px;text-align:center;", "".join([btn("https://afterlives.app","Play Now",hot=True),btn("https://afterlives.app/v2","See V2"),
+  blk("margin-top:22px;text-align:center;", "".join([btn("https://play.afterlives.app/","Play Now",hot=True),btn("https://afterlives.app/v2","See V2"),
       btn("https://caitierage.myindustryhub.live","Linkhub",ref=False),btn("https://instagram.com/xcaitieragex","IG @xcaitieragex",ref=False),
       btn("https://x.com/CaitieRage","Twitter @CaitieRage",ref=False)])),
   blk("margin:22px 0 0 0;font-size:12px;color:#71717a;%s" % F, "18+ only."),
