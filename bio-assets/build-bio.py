@@ -27,7 +27,7 @@ SEC="margin:22px 0 0 0;padding:18px 14px;border-radius:14px;background:%s;border
 afterlives = "".join([
   '<img src="%stown/noirleans.png" alt="The town of Noirleans" style="width:100%%;max-width:480px;height:auto;image-rendering:pixelated;border-radius:10px;display:block;margin:0 auto 14px auto;border:1px solid #2a2a31;">' % U,
   title('afterlives.png','Afterlives',152,39),
-  txt("My indie game, made solo, from the code to the art. Adopt a cryptid, raise it into a legend and dress it in the most ridiculous hats. Noirleans is a moody little town where ghosts run the shops and nobody asks why the swamp hums."),
+  txt("My indie game. Adopt a cryptid, raise it into a legend and dress it in the most ridiculous hats. Noirleans is a moody little town where ghosts run the shops and nobody asks why the swamp hums."),
   row([mon("cryptids/ghost.png","Ghost","Haunts on purpose."),mon("cryptids/sasquatch.png","Sasquatch","Blurry in every photo."),
        mon("cryptids/swampMonster.png","Swamp Monster","Damp. Unbothered."),mon("cryptids/mothman.png","Mothman","Will fight your ring light."),
        mon("cryptids/jerseyDevil.png","Jersey Devil","Chaos with wings.")]),
@@ -35,7 +35,7 @@ afterlives = "".join([
   txt("It's live! 13 cryptids to raise and minigames to play between visits. Free to start, no ads, and one unlock if you fall in love.")])
 campal = "".join([
   title('cam-pal.png','Cam Pal',115,39), badge("FREE IN THE CHATURBATE APP LIBRARY", CAMPAL_URL, ref=False),
-  txt("My own Chaturbate app, written, drawn and shipped by me. A sassy pixel pet moves into a see-through console in the corner of your stream and goes wild every time you get tipped."),
+  txt("My own Chaturbate app. A sassy pixel pet moves into a see-through console in the corner of your stream and goes wild every time you get tipped."),
   row([mon("campal/peachy.png","Peachy","Knows her angles."),mon("campal/cherries.png","The Cherries","Always a double feature."),
        mon("campal/eggy.png","Eggy","Unimpressed. Secretly thrilled."),mon("campal/bananzo.png","Bananzo","Thumbs up, always.")]),
   "".join(txt(t,"margin:4px 0;") for t in ["Tips make it wink, blush, smooch the screen, twerk and party","Throws a confetti party when you hit your tip goal",
@@ -43,8 +43,8 @@ campal = "".join([
 inner = "".join([
   '<img src="%savatar.png" alt="Caitie Rage" width="132" height="132" style="width:132px;height:132px;border-radius:50%%;border:4px solid %s;object-fit:cover;display:block;margin:0 auto 12px auto;box-shadow:0 0 22px rgba(255,0,102,.55);">' % (U,PINK),
   title('caitie-rage.png','Caitie Rage',214,56),
-  blk("margin:0 0 4px 0;color:#a1a1aa;font-size:14px;%s" % F, "Cam girl who codes. I made everything you see below."),
-  txt("Between shows I design, draw and build my own games and apps. Come say hi, poke around, and stay a while."),
+  blk("margin:0 0 4px 0;color:#a1a1aa;font-size:14px;%s" % F, "Cam girl and indie game maker."),
+  txt("Between shows I dream up my own games and apps. Come say hi, poke around, and stay a while."),
   blk(SEC, afterlives), blk(SEC, campal),
   blk("margin-top:22px;text-align:center;", "".join([btn("https://play.afterlives.app/","Play Now",hot=True),btn("https://afterlives.app/v2","See V2"),
       btn("https://caitierage.myindustryhub.live","Linkhub",ref=False),btn("https://instagram.com/xcaitieragex","IG @xcaitieragex",ref=False),
