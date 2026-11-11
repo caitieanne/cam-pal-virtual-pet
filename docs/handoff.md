@@ -12,7 +12,7 @@ Pick this up locally with Claude Code: open this repo, paste the "Prompt to star
 - The section titles are images, made with `make-titles.py`, because web fonts can't load without `<style>`.
 - Production builds from `main` work. Builds of other branches fail (red "Workers Builds: caitie-bio" check on PRs). The cause is unknown; the error is only in the Cloudflare dashboard log. Either read that log, or untick "Builds for non-production branches".
 
-**Copy rules for the bio:** edgy in a sweet way, showing off that Caitie made all of it. Not condescending, not "cute". No em dashes. Never use "baby" or "babies", or anything that sounds young. Say "virtual pet", never "Tamagotchi". The footer is just "18+ only."
+**Copy rules for the bio:** edgy in a sweet way, proud that these are her games and apps. Never claim she codes, draws, or did it all solo: it feels dishonest to her. Not condescending, not "cute". No em dashes. Never use "baby" or "babies", or anything that sounds young. Say "virtual pet", never "Tamagotchi". The footer is just "18+ only."
 
 **Cam Pal app**
 - Merged in #14: while a tip goal is set, the goal goes in the room subject via `$room.setSubject`. Settings: `goal_in_subject` and `room_subject`.
